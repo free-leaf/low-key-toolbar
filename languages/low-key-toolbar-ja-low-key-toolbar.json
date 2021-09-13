@@ -1,0 +1,33 @@
+{
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"plural_forms": "nplurals=1; plural=0;",
+				"lang": "ja"
+			},
+			"Low-Key Toolbar": [
+				"Low-Key Toolbar"
+			],
+			"Settings": [
+				"設定"
+			],
+			"Low-Key ToolBar setting": [
+				"Low-Key Toolbar の設定"
+			],
+			"Opacity": [
+				"不透明度"
+			],
+			"Scale": [
+				"バーの大きさ（倍率）"
+			],
+			"Margin Bottom (px)": [
+				"下マージン（px）"
+			],
+			"When hovering, Return to original size": [
+				"ホバーで元のサイズに拡大"
+			]
+		}
+	}
+}
