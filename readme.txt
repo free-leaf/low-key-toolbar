@@ -24,30 +24,21 @@ By adjusting these properteis, the toolbar will be less noticeable, and it will 
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-
 1. Upload the plugin files to the `/wp-content/plugins/low-key-toolbar` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-
+1. Activate the plugin through the 'Plugins' screen in WordPress.
 
 == Frequently Asked Questions ==
 
-= How to change setting =
-
-Low-Key ToolBar has own setting sidebar.
-
-
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Low-Key ToolBar makes the block editor toolbar less noticeable.
+2. Change opasity.
+3. Scaling toolbar.
+4. Control vertical position
+5. Toggle hovering zoomup
 
 == Changelog ==
 
 = 1.0.0 =
-* Release
+* First Release
 
