@@ -263,7 +263,7 @@ class Low_Key_Toolbar_Admin {
 			}
 		}
 
-		$opacity = get_option( 'low_key_toolbar_option' );
+		$opacity = get_option( 'low_key_toolbar_opacity' );
 		$scale   = get_option( 'low_key_toolbar_scale' );
 		$margin  = get_option( 'low_key_toolbar_margin' );
 
