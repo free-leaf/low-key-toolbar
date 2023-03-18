@@ -3,8 +3,8 @@
  * Plugin Name:       Low-Key Toolbar
  * Description:       This plugin add translucent option to block editor toolbar.
  * Requires at least: 5.7
- * Requires PHP:      7.0
- * Version:           1.0.1
+ * Requires PHP:      7.4
+ * Version:           1.1.0
  * Author:            Makoto Nakao
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
