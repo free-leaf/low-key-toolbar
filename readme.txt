@@ -2,7 +2,7 @@
 Contributors:      freeleaf
 Tags:              editor,gutenberg,toolbar
 Stable tag:        1.0.1
-Tested up to:      5.8
+Tested up to:      6.0
 Requires at least: 5.7
 Requires PHP:      7.0
 License:           GPL-2.0-or-later
