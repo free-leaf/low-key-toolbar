@@ -327,14 +327,12 @@ class Low_Key_Toolbar_Admin {
 	 */
 	public function option_to_js_variable() {
 
-		// $on_flg   = get_option( 'low_key_toolbar_on_flg' );
 		$lktb_var = array(
 			'opacity' => get_option( 'low_key_toolbar_opacity' ),
 			'scale'   => get_option( 'low_key_toolbar_scale' ),
 			'on_flg'  => (bool) get_option( 'low_key_toolbar_on_flg' ),
 			'margin'  => get_option( 'low_key_toolbar_margin' ),
 		);
-
 		wp_localize_script( $this->plugin_name, 'lktb_opt', $lktb_var );
 	}
 
