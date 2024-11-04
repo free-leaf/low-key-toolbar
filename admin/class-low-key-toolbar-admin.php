@@ -50,7 +50,6 @@ class Low_Key_Toolbar_Admin {
 
 		$this->plugin_name = $plugin_name;
 		$this->version     = $version;
-
 	}
 
 	/**
@@ -97,7 +96,7 @@ class Low_Key_Toolbar_Admin {
 				'type'              => 'number',
 				'show_in_rest'      => true,
 				'default'           => LOW_KEY_TOOLBAR_OPACITY,
-				'sanitize_callback' => function( $value ) {
+				'sanitize_callback' => function ( $value ) {
 					return $this->check_number( $value );
 				},
 			)
@@ -109,7 +108,7 @@ class Low_Key_Toolbar_Admin {
 				'type'              => 'number',
 				'show_in_rest'      => true,
 				'default'           => LOW_KEY_TOOLBAR_SCALE,
-				'sanitize_callback' => function( $value ) {
+				'sanitize_callback' => function ( $value ) {
 					return $this->check_number( $value );
 				},
 			)
@@ -121,7 +120,7 @@ class Low_Key_Toolbar_Admin {
 				'type'              => 'number',
 				'show_in_rest'      => true,
 				'default'           => LOW_KEY_TOOLBAR_MARGIN,
-				'sanitize_callback' => function( $value ) {
+				'sanitize_callback' => function ( $value ) {
 					return $this->check_margin( $value, LOW_KEY_TOOLBAR_MARGIN );
 				},
 			)
@@ -187,7 +186,7 @@ class Low_Key_Toolbar_Admin {
 
 		wp_register_script(
 			$this->plugin_name,
-			plugins_url( '/build/index.js', dirname( __FILE__ ) ),
+			plugins_url( '/build/index.js', __DIR__ ),
 			$dependencies,
 			filemtime( plugin_dir_path( __DIR__ ) . 'build/index.js' ),
 			true
@@ -199,7 +198,6 @@ class Low_Key_Toolbar_Admin {
 				'editor_script' => $this->plugin_name,
 			)
 		);
-
 	}
 
 	/**
@@ -249,7 +247,7 @@ class Low_Key_Toolbar_Admin {
 	 * @return string
 	 */
 	public function inline_css() {
-		global $post,$pagenow;
+		global $post, $pagenow;
 
 		if ( 'post.php' !== $pagenow && 'post-new.php' !== $pagenow ) {
 			return;
@@ -257,10 +255,8 @@ class Low_Key_Toolbar_Admin {
 
 		if ( apply_filters( 'replace_editor', false, $post ) === true ) {
 			return;
-		} else {
-			if ( function_exists( 'use_block_editor_for_post' ) && ! use_block_editor_for_post( $post ) ) {
+		} elseif ( function_exists( 'use_block_editor_for_post' ) && ! use_block_editor_for_post( $post ) ) {
 				return;
-			}
 		}
 
 		$opacity = get_option( 'low_key_toolbar_opacity' );
@@ -335,5 +331,4 @@ class Low_Key_Toolbar_Admin {
 		);
 		wp_localize_script( $this->plugin_name, 'lktb_opt', $lktb_var );
 	}
-
 }

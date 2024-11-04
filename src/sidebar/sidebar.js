@@ -1,6 +1,6 @@
 import { registerPlugin } from "@wordpress/plugins";
 import api from "@wordpress/api";
-import { PluginSidebar, PluginSidebarMoreMenuItem } from "@wordpress/edit-post";
+import { PluginSidebar, PluginSidebarMoreMenuItem } from "@wordpress/editor";
 import { PanelBody, ToggleControl, RangeControl } from "@wordpress/components";
 import { useState, useEffect, Fragment } from "@wordpress/element";
 import { __ } from "@wordpress/i18n";
@@ -104,7 +104,7 @@ let PluginMetaFields = () => {
 				<ToggleControl
 					label={__(
 						"When hovering, Return to original size",
-						"low-key-toolbar"
+						"low-key-toolbar",
 					)}
 					checked={showFlg}
 					onChange={() => setShowFlg(!showFlg)}

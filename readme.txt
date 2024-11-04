@@ -1,9 +1,9 @@
 === Low-Key ToolBar ===
 Contributors:      freeleaf
 Tags:              editor,gutenberg,toolbar
-Stable tag:        1.1.0
-Tested up to:      6.2
-Requires at least: 5.7
+Stable tag:        1.1.1
+Tested up to:      6.7
+Requires at least: 6.0
 Requires PHP:      7.4
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -38,6 +38,10 @@ By adjusting these properteis, the toolbar will be less noticeable, and it will 
 5. Toggle hovering zoomup
 
 == Changelog ==
+
+= 1.1.1 =
+* Fixed deprecation warning.
+
 = 1.1.0 =
 * Now available for all post types.
 * Fixed problem with sidebar not displaying initial values.
